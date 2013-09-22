@@ -1,0 +1,30 @@
+function user(win, src)
+{
+	var id = document.getElementById('window');
+	var frame = document.createElement('iframe');
+	frame.setAttribute('class','tmp1');
+	frame.setAttribute('src','../html/'+src);
+	id.appendChild(frame);
+	
+	$('#window').fadeIn(function() {
+		window.setTimeout(function(){
+			$('#'+win+'.zoomout').addClass(win+'-visible');
+		}, 200);
+	});
+}
+
+
+		/*type = $(this).attr('data-type');
+		$('.contenedor-registro').fadeIn(function() {
+			window.setTimeout(function(){
+				$('.ventana-registro.'+type).addClass('ventana-registro-visible');
+			}, 200);
+		});
+	});*/
+
+
+
+
+	/*$('#cerrarReg').click(function() {
+		$('.contenedor-registro').fadeOut().end().find('.ventana-registro').removeClass('ventana-registro-visible');
+	});*/

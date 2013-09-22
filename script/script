@@ -1,0 +1,58 @@
+/*function removeElement(divNum) {
+  var d = document.getElementById('vv');
+  var olddiv = document.getElementById('mijo1');
+  d.removeChild(olddiv);
+}*/
+
+function myFunction()
+{
+	//alert("My First JavaScript");
+	var id = document.getElementById('elementos');
+
+	//var numi = document.getElementById('theValue');
+
+	//var num = (document.getElementById('theValue').value -1)+ 2;
+
+	//numi.value = num;
+
+	var newdiv = document.createElement('div');
+
+	newdiv.setAttribute('class','tmp');
+	//newdiv.setAttribute('onmousedown','mDown(this)');
+	//newdiv.setAttribute('onmouseup','mUp(this)');
+	
+	//newdiv.style.float="left";
+	//newdiv.style.display="inline-block";
+
+	//onmousedown="mDown(this)" onmouseup="mUp(this)"
+
+	//document.getElementById("mijo").style.left = (document.getElementById('theValue').value - 1) + 60;
+	
+	//newdiv.innerHTML = '<a href=\'#\' onclick=\'removeElement('+divIdName+')\'>Remove "'+divIdName+'"</a>';
+	//newdiv.innerHTML = "hola";
+
+	id.appendChild(newdiv);
+}
+
+/*function mDown(obj)
+{
+obj.style.backgroundColor="#1ec5e5";
+obj.innerHTML="Release Me";
+}
+
+function mUp(obj)
+{
+obj.style.backgroundColor="#D94A38";
+obj.innerHTML="Take me";
+}*/
+
+$(function() {
+    $( "#elementos" ).sortable({
+    	axis: "x"
+    });
+    $( "#elementos" ).disableSelection();
+  });
+
+/*$(function() {
+    $( "#nav" ).draggable({ scroll: true });
+}*/

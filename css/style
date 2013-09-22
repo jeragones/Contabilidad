@@ -1,0 +1,124 @@
+/*
+barra de inicio de sesiones
+*/
+#nav {
+	width: 100%;
+	height: 40px;
+	/*display: inline-block;*/
+	/*background: -webkit-linear-gradient(#363636, #2F3029);*/
+	float: left;
+	background: -webkit-linear-gradient(#999786, #9A9C8D);
+}
+
+/*
+cuerpo de la pagina
+*/
+#body {
+	background: #A80000;
+}
+
+/*
+opciones de menu
+*/
+#menu {	
+	background: #1E4209;
+}
+
+/*
+opciones de usuario
+*/
+#user {
+	float: right;
+	margin-right: 10px;
+	text-align: right;
+}
+
+/*
+ventanas emergentes
+*/
+#window {
+	display: none;
+}
+
+#elementos {
+	width: 100%;
+	height: 100px;
+	top: 50px;
+    position: relative;
+    background: #CDCDCD;
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    
+    white-space: nowrap;
+    padding-bottom: 5px;
+    margin: 0; padding: 0;
+    /*list-style-type: none;*/
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #CDCDCD;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+} 
+/*::-webkit-scrollbar-button {
+      background-color: #CDCDCD;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+::-webkit-scrollbar-corner {
+      background-color: #CDCDCD;
+}
+
+#article {
+	background: #008000;
+	width: 50%;
+	height: 100px;
+	top: 50px;
+	position: relative;
+	background: #8080FF;
+}
+
+#section {
+	width: 50%;
+	height: 50px;
+	position: relative;
+	background: #FF8040;
+}
+
+.tmp {
+	width: 60px;
+	height: 80px;
+	margin: 5px 0px 0px 5px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	background: #008080;
+}
+
+
+/*#nav { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #nav li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+  #nav li span { position: absolute; margin-left: -1.3em; }
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .tmp1 {
+  	border: none;
+  }
