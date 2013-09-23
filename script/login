@@ -1,0 +1,51 @@
+
+function validate()
+{
+	if($('#txtUser').val() !== '') {
+		if($('#txtPass').val() !== '') {
+			if($('#txtUser').val() === 'jera' && $('#txtPass').val() === 'jera') {
+				document.getElementById('txtUser').style.display = 'none';
+				document.getElementById('txtPass').style.display = 'none';
+				$('#userLogin').attr('src','../images/User_Logued.png');
+				document.getElementById('lblUser').style.display = 'inline';
+				$('#userChange').show();
+				$('#txtUser').val('');
+				$('#txtPass').val('');
+			} else {
+				$('#txtPass').val('');
+				document.getElementById('txtPass').style.border = 'solid 2px #9a1b1e';
+			}
+			/*document.getElementById('txtPass').style.border = 'solid 1px #424141';*/	
+		} else {
+			document.getElementById('txtPass').style.border = 'solid 2px #9a1b1e';
+		}
+		document.getElementById('txtUser').style.border = 'solid 1px #424141';
+	} else {
+		document.getElementById('txtUser').style.border = 'solid 2px #9a1b1e';
+	} 
+}
+
+$('#userLogin').click(function() {
+	if(document.getElementById('txtUser').style.display !== 'inline' && document.getElementById('lblUser').style.display !== 'inline') {
+		document.getElementById('userLogin').style.margin = '5px 70px 0px 5px';
+		setTimeout(function(){
+			document.getElementById('userLogin').style.margin = '5px 5px 0px 5px';
+			document.getElementById('txtUser').style.display = 'inline';
+			document.getElementById('txtPass').style.display = 'inline';
+			/*$('#txtUser').show();*/
+	    }, 800);
+	} else {
+		validate();
+  	}
+});
+
+
+$('#userChange').click(function() {
+	document.getElementById('userLogin').style.margin = '5px 5px 0px 5px';
+	document.getElementById('lblUser').style.display = 'none';
+	document.getElementById('txtUser').style.display = 'none';
+	document.getElementById('txtPass').style.display = 'none';
+	document.getElementById('userChange').style.display = 'none';
+});
+
+

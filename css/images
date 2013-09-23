@@ -5,3 +5,10 @@
 	cursor: pointer;
 }
 
+#userLogin {
+	transition-duration: 1s;
+}
+
+#userLogin:after {
+	transition-duration: 1s;	
+}

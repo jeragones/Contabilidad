@@ -5,9 +5,11 @@
 		<meta charset="UTF-8">
 		
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="../css/structure" />
 		<link rel="stylesheet" type="text/css" href="../css/style" />
 		<link rel="stylesheet" type="text/css" href="../css/images" />
 		<link rel="stylesheet" type="text/css" href="../css/textbox" />
+		<link rel="stylesheet" type="text/css" href="../css/label" />
 		<link rel="stylesheet" type="text/css" href="../css/window" />
 
 		
@@ -18,20 +20,32 @@
   		
   		<title>Prueba</title>
 	</header>	
-	<body id="body">
+	<body id="page">
 		<nav id="nav">
-			<div id="menu"></div>
-			<div id="user">
-			<!--<input id="contact" type="button" value="Contactar" class="btnInicio" data-type="zoomout"/></li>-->
-				<img src="../images/Businessman.png" class="imgUser" onclick="user('register zoomout','register.html')">
-				<img src="../images/Add_User.png" class="imgUser" onclick="user(2)">
-				<img src="../images/Checked_User.png" class="imgUser" onclick="alert('Loged')" style="display:none">
-				<img src="../images/Edit_User.png" class="imgUser" onclick="alert('Edit Profile')" style="display:none">
-				<img src="../images/Change_User.png" class="imgUser" onclick="alert('Change User')" style="display:none">
+			<div id="menu">
+				<!--onclick="document.location='index.html')"-->
+				<img src="../images/Home.png" class="imgUser" onclick="openWindow('index.html','_parent')">
+				<img src="../images/Message.png" class="imgUser" onclick="alert('Correo')">	
+			</div>
+			<!--onmouseover="" onmouseout=""-->
+			<div id="user" onclick="login()">
+				<!--user('register zoomout','register.html')-->
+				<img id="userLogin" src="../images/User_Login.png" class="imgUser">
+				<input id="txtUser" class="txtUser" type="text" placeholder="Usuario:" style="display:none">
+				<input id="txtPass" class="txtUser" type="password" placeholder="Contraseña:" style="display:none">
+				<label id="lblUser">Jorge Rojas Rojas</label>
+				<img src="../images/User_Add.png" class="imgUser" onclick="alert('Add User')" style="display:none">
+				<img src="../images/User_Logued.png" class="imgUser" onclick="alert('Loged')" style="display:none">
+				<img src="../images/User_Edit.png" class="imgUser" onclick="alert('Edit Profile')" style="display:none">
+				<img id="userChange" src="../images/User_Change.png" class="imgUser" onclick="alert('Change User')" style="display:none">
 			</div>
 		</nav>
-		<div id="elementos">
-			<!--<input type="hidden" value="0" id="theValue" />-->
+		<article id="body">
+				
+		</article>
+
+		<!--<div id="elementos">
+			<input type="hidden" value="0" id="theValue" />
 		</div>
 		<article id="article">
 			<section id="section">
@@ -40,13 +54,17 @@
 		</article>
 		<aside id="aside">
 			
-		</aside>
+		</aside>-->
 
 		<script type="text/javascript" src="../script/script"></script>
 		<script type="text/javascript" src="../script/window"></script>
+		<script type="text/javascript" src="../script/windows.js"></script>
+		<script type="text/javascript" src="../script/login"></script>
 	</body>
 	<footer>
-		
+		<!--<div class="circle">
+    		<h1>codrops</h1>
+		</div>-->
 	</footer>	
 	<div id="window"></div>
 </html>

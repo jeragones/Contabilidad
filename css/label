@@ -1,0 +1,13 @@
+#lblUser {
+	width: 50px;
+	height: 30px;
+	margin: 5px 5px 0px 5px;
+	top: -10px;
+	color: #ececec;
+	position: relative;
+	display: none;
+	font-weight:bold;
+	text-shadow: ;
+	font-family: trebuchet MS, sans-serif; 
+	font-size: 0.875em;
+}
